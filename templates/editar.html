@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Programa</title>
+</head>
+<body>
+    <h1>Editar Programa</h1>
+
+    <form method="POST" action="/editar_programa/{{ programa.Id }}">
+
+        <label for="abreviatura_facultad">Abreviatura de Facultad:</label>
+        <input type="text" name="abreviatura_facultad" value="{{ programa.CodPrograma }}" required><br><br>
+        <label for="nombre_programa">Programa:</label>
+        <input type="text" name="nombre_programa" value="{{ programa.Nombre }}" required><br><br>
+        <button type="submit">Guardar</button>
+        
+    </form>
+    <br>
+    <a href="/login">Volver a la lista de programas</a>
+</body>
+</html>

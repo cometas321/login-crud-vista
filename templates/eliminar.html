@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Programa</title>
+</head>
+<body>
+    <h1>Eliminar Programa</h1>
+    <p>¿Estás seguro de que deseas eliminar este programa?</p>
+    <form method="POST" action="/eliminar_programa/{{ programa.Id }}">
+        <button type="submit">Eliminar</button>
+        <a href="/login">Cancelar</a>
+    </form>
+</body>
+</html>
